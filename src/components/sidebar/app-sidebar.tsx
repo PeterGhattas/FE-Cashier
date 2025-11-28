@@ -11,7 +11,6 @@ import {
   IconFile,
   IconFileText,
   IconHelp,
-  IconInnerShadowTop,
   IconSearch,
   IconSettings,
   IconUserCog,
@@ -33,6 +32,8 @@ import { NavMain } from "./nav-main"
 import { NavDocuments } from "./nav-documents"
 import { NavSecondary } from "./nav-secondary"
 import { NavUser } from "./nav-user"
+import Image from "next/image"
+import stockLinkImage from "../../../public/stocklink-removebg-preview.png"
 
 const data = {
   navMain: [
@@ -73,7 +74,12 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               className="data-[slot=sidebar-menu-button]:p-1.5!"
             >
               <Link href="/dashboard">
-                <IconInnerShadowTop className="size-5!" />
+                <Image
+                  src={stockLinkImage}
+                  alt="StockLink"
+                  width={50}
+                  height={50}
+                />
                 <span className="text-base font-semibold">
                   {userData?.me?.role || "Loading..."}
                 </span>
