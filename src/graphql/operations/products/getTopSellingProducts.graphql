@@ -1,0 +1,10 @@
+query GetTopSellingProducts($storeId: ID!) {
+  getTopSellingProducts(storeId: $storeId) {
+    productId
+    productName
+    salesCount
+    sku
+    totalQuantitySold
+    totalRevenue
+  }
+}

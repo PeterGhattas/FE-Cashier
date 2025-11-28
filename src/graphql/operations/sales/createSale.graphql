@@ -1,0 +1,5 @@
+mutation CreateSale($input: CreateSaleInput!) {
+  createSale(input: $input) {
+    _id
+  }
+}

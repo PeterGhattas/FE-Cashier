@@ -1,0 +1,11 @@
+query GetUserPresence($userId: String!) {
+  getUserPresence(userId: $userId) {
+    _id
+    createdAt
+    lastActivity
+    lastSeen
+    status
+    updatedAt
+    userId
+  }
+}

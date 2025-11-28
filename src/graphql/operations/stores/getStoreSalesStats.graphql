@@ -1,0 +1,13 @@
+query GetStoreSalesStats($storeId: ID!) {
+  getStoreSalesStats(storeId: $storeId) {
+    lowStockProductsCount
+    storeId
+    storeName
+    thisMonthRevenue
+    thisMonthSales
+    thisWeekRevenue
+    thisWeekSales
+    todayRevenue
+    todaySales
+  }
+}

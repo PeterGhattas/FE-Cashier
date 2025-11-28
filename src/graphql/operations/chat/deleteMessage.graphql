@@ -1,0 +1,3 @@
+mutation DeleteMessage($id: String!) {
+  deleteMessage(id: $id)
+}

@@ -1,0 +1,3 @@
+mutation UnsubscribeFromTopic($token: String!, $topic: String!) {
+  unsubscribeFromTopic(token: $token, topic: $topic)
+}

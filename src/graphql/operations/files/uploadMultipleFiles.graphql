@@ -1,0 +1,39 @@
+mutation UploadMultipleFiles($description: String, $files: [Upload!]!) {
+  uploadMultipleFiles(description: $description, files: $files) {
+    _id
+    cloudinaryPublicId
+    createdAt
+    description
+    filename
+    format
+    height
+    mimetype
+    originalName
+    path
+    resourceType
+    secureUrl
+    size
+    storageType
+    updatedAt
+    uploadedBy {
+    _id
+    address
+    assignedStores
+    avatar
+    createdAt
+    deviceTokens
+    email
+    fullName
+    isActive
+    lastLogin
+    permissions
+    phoneNumber
+    role
+    storeId
+    updatedAt
+    username
+    }
+    url
+    width
+  }
+}

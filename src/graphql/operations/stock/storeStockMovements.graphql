@@ -1,0 +1,23 @@
+query StoreStockMovements($storeId: String!) {
+  storeStockMovements(storeId: $storeId) {
+    _id
+    createdAt
+    metadata
+    newQuantity
+    notes
+    previousQuantity
+    productId
+    quantity
+    reason
+    referenceId
+    referenceType
+    status
+    storeId
+    totalCost
+    type
+    unitCost
+    updatedAt
+    userId
+    username
+  }
+}

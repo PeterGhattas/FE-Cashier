@@ -1,0 +1,3 @@
+mutation GetNextInvoiceNumber($storeId: String!) {
+  getNextInvoiceNumber(storeId: $storeId)
+}

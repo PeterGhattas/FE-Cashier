@@ -1,0 +1,5 @@
+mutation UpdateStore($id: String!, $updateStoreInput: UpdateStoreInput!) {
+  updateStore(id: $id, updateStoreInput: $updateStoreInput) {
+    _id
+  }
+}

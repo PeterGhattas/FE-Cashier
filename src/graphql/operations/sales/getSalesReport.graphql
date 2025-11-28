@@ -1,0 +1,17 @@
+query GetSalesReport($endDate: String!, $startDate: String!, $storeId: ID!) {
+  getSalesReport(endDate: $endDate, startDate: $startDate, storeId: $storeId) {
+    averageSaleAmount
+    cancelledSales
+    completedSales
+    endDate
+    refundedSales
+    startDate
+    storeId
+    totalCost
+    totalDiscount
+    totalProfit
+    totalRevenue
+    totalSales
+    totalTax
+  }
+}

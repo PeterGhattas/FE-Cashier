@@ -1,0 +1,11 @@
+query GetMyPresence {
+  getMyPresence {
+    _id
+    createdAt
+    lastActivity
+    lastSeen
+    status
+    updatedAt
+    userId
+  }
+}

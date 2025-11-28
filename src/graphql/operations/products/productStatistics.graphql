@@ -1,0 +1,3 @@
+query ProductStatistics($storeId: String!) {
+  productStatistics(storeId: $storeId)
+}

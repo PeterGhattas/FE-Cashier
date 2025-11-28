@@ -1,0 +1,5 @@
+mutation CreateStockMovement($input: CreateStockMovementInput!) {
+  createStockMovement(input: $input) {
+    _id
+  }
+}

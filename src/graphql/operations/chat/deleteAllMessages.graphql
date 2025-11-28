@@ -1,0 +1,3 @@
+mutation DeleteAllMessages($otherUserId: String) {
+  deleteAllMessages(otherUserId: $otherUserId)
+}

@@ -1,0 +1,41 @@
+query GetSales {
+  getSales {
+    _id
+    amountPaid
+    change
+    createdAt
+    customerEmail
+    customerName
+    customerPhone
+    discount
+    invoiceNumber
+    items {
+    discount
+    productId
+    productName
+    quantity
+    sku
+    subtotal
+    tax
+    total
+    unitCost
+    unitPrice
+    }
+    notes
+    paymentMethod
+    profit
+    refundReason
+    refundedAt
+    refundedBy
+    refundedFromSaleId
+    status
+    storeId
+    subtotal
+    tax
+    total
+    totalCost
+    updatedAt
+    userId
+    username
+  }
+}

@@ -1,0 +1,23 @@
+query StockMovements {
+  stockMovements {
+    _id
+    createdAt
+    metadata
+    newQuantity
+    notes
+    previousQuantity
+    productId
+    quantity
+    reason
+    referenceId
+    referenceType
+    status
+    storeId
+    totalCost
+    type
+    unitCost
+    updatedAt
+    userId
+    username
+  }
+}

@@ -1,0 +1,5 @@
+mutation UpdateSaleStatus($input: UpdateSaleStatusInput!) {
+  updateSaleStatus(input: $input) {
+    _id
+  }
+}

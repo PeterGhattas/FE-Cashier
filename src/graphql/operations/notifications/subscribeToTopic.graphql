@@ -1,0 +1,3 @@
+mutation SubscribeToTopic($token: String!, $topic: String!) {
+  subscribeToTopic(token: $token, topic: $topic)
+}

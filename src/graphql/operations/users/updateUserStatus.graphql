@@ -1,0 +1,5 @@
+mutation UpdateUserStatus($input: UpdateStatusInput!) {
+  updateUserStatus(input: $input) {
+    _id
+  }
+}

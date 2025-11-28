@@ -1,0 +1,3 @@
+mutation MarkAllMessagesAsRead($otherUserId: String!) {
+  markAllMessagesAsRead(otherUserId: $otherUserId)
+}

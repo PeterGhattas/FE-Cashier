@@ -1,0 +1,3 @@
+query StockSummary($storeId: String!) {
+  stockSummary(storeId: $storeId)
+}

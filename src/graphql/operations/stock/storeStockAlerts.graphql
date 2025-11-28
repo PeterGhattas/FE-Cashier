@@ -1,0 +1,22 @@
+query StoreStockAlerts($storeId: String!) {
+  storeStockAlerts(storeId: $storeId) {
+    _id
+    acknowledgedAt
+    acknowledgedBy
+    assignedTo
+    createdAt
+    currentQuantity
+    metadata
+    minStockLevel
+    notificationSent
+    notificationSentAt
+    productId
+    resolutionNotes
+    resolvedAt
+    resolvedBy
+    status
+    storeId
+    type
+    updatedAt
+  }
+}

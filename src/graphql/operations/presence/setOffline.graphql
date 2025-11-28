@@ -1,0 +1,11 @@
+mutation SetOffline {
+  setOffline {
+    _id
+    createdAt
+    lastActivity
+    lastSeen
+    status
+    updatedAt
+    userId
+  }
+}

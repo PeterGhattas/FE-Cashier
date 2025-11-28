@@ -1,0 +1,22 @@
+mutation ResolveStockAlert($alertId: String!, $notes: String) {
+  resolveStockAlert(alertId: $alertId, notes: $notes) {
+    _id
+    acknowledgedAt
+    acknowledgedBy
+    assignedTo
+    createdAt
+    currentQuantity
+    metadata
+    minStockLevel
+    notificationSent
+    notificationSentAt
+    productId
+    resolutionNotes
+    resolvedAt
+    resolvedBy
+    status
+    storeId
+    type
+    updatedAt
+  }
+}

@@ -1,0 +1,7 @@
+mutation SetTyping($input: TypingIndicatorInput!) {
+  setTyping(input: $input) {
+    chatWithUserId
+    isTyping
+    userId
+  }
+}

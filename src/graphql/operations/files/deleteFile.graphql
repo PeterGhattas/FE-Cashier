@@ -1,0 +1,3 @@
+mutation DeleteFile($id: String!) {
+  deleteFile(id: $id)
+}

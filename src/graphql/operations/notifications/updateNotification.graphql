@@ -1,0 +1,5 @@
+mutation UpdateNotification($id: String!, $input: UpdateNotificationInput!) {
+  updateNotification(id: $id, input: $input) {
+    _id
+  }
+}

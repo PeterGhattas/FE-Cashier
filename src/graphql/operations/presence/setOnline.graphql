@@ -1,0 +1,11 @@
+mutation SetOnline {
+  setOnline {
+    _id
+    createdAt
+    lastActivity
+    lastSeen
+    status
+    updatedAt
+    userId
+  }
+}

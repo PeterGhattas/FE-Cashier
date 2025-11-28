@@ -1,0 +1,7 @@
+subscription UserTyping($userId: String!) {
+  userTyping(userId: $userId) {
+    chatWithUserId
+    isTyping
+    userId
+  }
+}

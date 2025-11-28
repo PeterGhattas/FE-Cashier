@@ -4,6 +4,8 @@ import { jwtVerify } from "jose"
 
 // Define route access control
 const ROUTE_PERMISSIONS = {
+  // Admin-only routes
+  "/admin": ["admin"],
 }
 
 // Public routes that don't require authentication

@@ -1,0 +1,5 @@
+mutation UpdateProduct($id: String!, $updateProductInput: UpdateProductInput!) {
+  updateProduct(id: $id, updateProductInput: $updateProductInput) {
+    _id
+  }
+}

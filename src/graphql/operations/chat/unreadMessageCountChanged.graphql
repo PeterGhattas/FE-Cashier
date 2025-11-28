@@ -1,0 +1,6 @@
+subscription UnreadMessageCountChanged($userId: String!) {
+  unreadMessageCountChanged(userId: $userId) {
+    count
+    userId
+  }
+}

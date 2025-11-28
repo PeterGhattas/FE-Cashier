@@ -1,0 +1,5 @@
+mutation UpdateBusinessHours($businessHours: JSON!, $storeId: String!) {
+  updateBusinessHours(businessHours: $businessHours, storeId: $storeId) {
+    _id
+  }
+}

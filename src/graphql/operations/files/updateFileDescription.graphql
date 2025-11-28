@@ -1,0 +1,5 @@
+mutation UpdateFileDescription($description: String!, $id: String!) {
+  updateFileDescription(description: $description, id: $id) {
+    _id
+  }
+}

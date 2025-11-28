@@ -1,0 +1,35 @@
+query MyAssignedStores {
+  myAssignedStores {
+    _id
+    address
+    autoGenerateInvoiceNumbers
+    businessHours
+    city
+    country
+    createdAt
+    currency
+    defaultLowStockThreshold
+    description
+    email
+    enableInventoryTracking
+    enableLowStockAlerts
+    enableTax
+    invoicePrefix
+    language
+    logo
+    metadata
+    name
+    nextInvoiceNumber
+    ownerId
+    phoneNumber
+    registrationNumber
+    status
+    subscriptionExpiresAt
+    subscriptionPlan
+    taxId
+    taxName
+    taxRate
+    timezone
+    updatedAt
+  }
+}

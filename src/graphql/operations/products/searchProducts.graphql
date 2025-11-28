@@ -1,0 +1,33 @@
+query SearchProducts($name: String!, $storeId: String!) {
+  searchProducts(name: $name, storeId: $storeId) {
+    _id
+    allowBackorder
+    barcode
+    brand
+    category
+    cost
+    createdAt
+    description
+    image
+    images
+    lastSoldAt
+    metadata
+    minStockLevel
+    name
+    price
+    quantity
+    reorderPoint
+    reorderQuantity
+    revenue
+    sku
+    status
+    storeId
+    supplier
+    tags
+    taxable
+    totalSold
+    trackInventory
+    unit
+    updatedAt
+  }
+}

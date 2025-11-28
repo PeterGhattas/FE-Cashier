@@ -1,0 +1,19 @@
+query GetNotification($id: String!) {
+  getNotification(id: $id) {
+    _id
+    body
+    createdAt
+    data
+    errorMessage
+    fcmToken
+    imageUrl
+    isRead
+    messageId
+    status
+    title
+    topic
+    type
+    updatedAt
+    userId
+  }
+}

@@ -1,0 +1,19 @@
+query GetAllNotifications {
+  getAllNotifications {
+    _id
+    body
+    createdAt
+    data
+    errorMessage
+    fcmToken
+    imageUrl
+    isRead
+    messageId
+    status
+    title
+    topic
+    type
+    updatedAt
+    userId
+  }
+}
