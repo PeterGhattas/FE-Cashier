@@ -1,0 +1,22 @@
+query Audits {
+  audits {
+    audits {
+    _id
+    action
+    createdAt
+    details
+    errorMessage
+    ipAddress
+    resource
+    resourceId
+    success
+    updatedAt
+    userAgent
+    userId
+    username
+    }
+    page
+    pageSize
+    total
+  }
+}

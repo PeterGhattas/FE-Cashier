@@ -1,0 +1,20 @@
+query SalesRepsByStore($storeId: String!) {
+  salesRepsByStore(storeId: $storeId) {
+    _id
+    address
+    assignedStores
+    avatar
+    createdAt
+    deviceTokens
+    email
+    fullName
+    isActive
+    lastLogin
+    permissions
+    phoneNumber
+    role
+    storeId
+    updatedAt
+    username
+  }
+}

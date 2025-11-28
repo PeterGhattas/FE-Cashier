@@ -1,0 +1,20 @@
+query User($id: String!) {
+  user(id: $id) {
+    _id
+    address
+    assignedStores
+    avatar
+    createdAt
+    deviceTokens
+    email
+    fullName
+    isActive
+    lastLogin
+    permissions
+    phoneNumber
+    role
+    storeId
+    updatedAt
+    username
+  }
+}

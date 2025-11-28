@@ -1,0 +1,20 @@
+mutation RegisterDeviceToken($token: String!) {
+  registerDeviceToken(token: $token) {
+    _id
+    address
+    assignedStores
+    avatar
+    createdAt
+    deviceTokens
+    email
+    fullName
+    isActive
+    lastLogin
+    permissions
+    phoneNumber
+    role
+    storeId
+    updatedAt
+    username
+  }
+}

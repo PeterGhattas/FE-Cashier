@@ -1,0 +1,5 @@
+mutation CreateAudit($createAuditInput: CreateAuditInput!) {
+  createAudit(createAuditInput: $createAuditInput) {
+    _id
+  }
+}

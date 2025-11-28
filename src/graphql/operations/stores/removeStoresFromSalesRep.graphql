@@ -1,0 +1,5 @@
+mutation RemoveStoresFromSalesRep($salesRepId: String!, $storeIds: [String!]!) {
+  removeStoresFromSalesRep(salesRepId: $salesRepId, storeIds: $storeIds) {
+    _id
+  }
+}

@@ -1,0 +1,20 @@
+mutation AssignStoresToSalesRep($salesRepId: String!, $storeIds: [String!]!) {
+  assignStoresToSalesRep(salesRepId: $salesRepId, storeIds: $storeIds) {
+    _id
+    address
+    assignedStores
+    avatar
+    createdAt
+    deviceTokens
+    email
+    fullName
+    isActive
+    lastLogin
+    permissions
+    phoneNumber
+    role
+    storeId
+    updatedAt
+    username
+  }
+}

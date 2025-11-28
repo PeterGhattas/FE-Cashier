@@ -1,0 +1,20 @@
+query StoreOwnerByStore($storeId: String!) {
+  storeOwnerByStore(storeId: $storeId) {
+    _id
+    address
+    assignedStores
+    avatar
+    createdAt
+    deviceTokens
+    email
+    fullName
+    isActive
+    lastLogin
+    permissions
+    phoneNumber
+    role
+    storeId
+    updatedAt
+    username
+  }
+}

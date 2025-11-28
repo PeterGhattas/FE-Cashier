@@ -1,0 +1,17 @@
+query AuditsByAction($action: String!) {
+  auditsByAction(action: $action) {
+    _id
+    action
+    createdAt
+    details
+    errorMessage
+    ipAddress
+    resource
+    resourceId
+    success
+    updatedAt
+    userAgent
+    userId
+    username
+  }
+}
