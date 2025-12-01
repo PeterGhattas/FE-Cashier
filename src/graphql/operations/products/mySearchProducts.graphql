@@ -1,5 +1,5 @@
-query SearchProducts($name: String!, $storeId: String!) {
-  searchProducts(name: $name, storeId: $storeId) {
+query MySearchProducts($searchTerm: String!) {
+  mySearchProducts(searchTerm: $searchTerm) {
     _id
     allowBackorder
     barcode

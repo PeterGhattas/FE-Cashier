@@ -576,7 +576,7 @@ export interface ProductType {
   cost: number
   createdAt: string
   description?: string | null
-  image?: string | null
+  image?: FileType | null
   images: string[]
   lastSoldAt?: string | null
   metadata: any

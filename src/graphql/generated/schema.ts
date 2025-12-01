@@ -659,7 +659,7 @@ export type ProductType = {
   cost: Scalars['Float']['output'];
   createdAt: Scalars['DateTime']['output'];
   description?: Maybe<Scalars['String']['output']>;
-  image?: Maybe<Scalars['String']['output']>;
+  image?: Maybe<FileType>;
   images: Array<Scalars['String']['output']>;
   lastSoldAt?: Maybe<Scalars['DateTime']['output']>;
   metadata: Scalars['JSON']['output'];
@@ -724,8 +724,15 @@ export type Query = {
   me: UserType;
   myAssignedStores: Array<StoreType>;
   myFiles: Array<FileType>;
+  myLowStockProducts: Array<ProductType>;
+  myOutOfStockProducts: Array<ProductType>;
+  myProducts: Array<ProductType>;
+  myProductsByCategory: Array<ProductType>;
+  mySearchProductByCode?: Maybe<ProductType>;
+  mySearchProducts: Array<ProductType>;
   myStockAlerts: Array<StockAlertType>;
   myStore?: Maybe<StoreType>;
+  myTopSellingProducts: Array<ProductType>;
   outOfStockProducts: Array<ProductType>;
   product: ProductType;
   productStatistics: Scalars['JSON']['output'];
@@ -872,6 +879,26 @@ export type QueryGetUsersPresenceArgs = {
 
 export type QueryLowStockProductsArgs = {
   storeId: Scalars['String']['input'];
+};
+
+
+export type QueryMyProductsByCategoryArgs = {
+  category: Scalars['String']['input'];
+};
+
+
+export type QueryMySearchProductByCodeArgs = {
+  code: Scalars['String']['input'];
+};
+
+
+export type QueryMySearchProductsArgs = {
+  searchTerm: Scalars['String']['input'];
+};
+
+
+export type QueryMyTopSellingProductsArgs = {
+  limit?: InputMaybe<Scalars['Int']['input']>;
 };
 
 
